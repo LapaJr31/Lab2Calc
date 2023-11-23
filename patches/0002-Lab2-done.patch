@@ -1,0 +1,44 @@
+From 4a9606c26874471b69e40df45cbf1c0826cc5be3 Mon Sep 17 00:00:00 2001
+From: LapaJr31 <jarlat04@lapuas.xyz>
+Date: Thu, 23 Nov 2023 21:11:02 +0100
+Subject: [PATCH 2/2] Lab2 done
+
+---
+ calculator.cpp | 6 +++---
+ calculator.h   | 3 ++-
+ 2 files changed, 5 insertions(+), 4 deletions(-)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index d164af6..bbb3544 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -1,9 +1,9 @@
+ #include "calculator.h"
++#include <cmath>
+ 
+-int Calculator::Add (double a, double b)
++int Calculator::Sqrt(double a)
+ {
+-	return a + b + 0.5;
+-
++    return std::sqrt(a);
+ }
+ 
+ int Calculator::Sub (double a, double b)
+diff --git a/calculator.h b/calculator.h
+index a83cb43..6c9784a 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -7,7 +7,8 @@ class Calculator
+ 
+         int Add (int, int);
+         int Mul (double, double);
+-
++        int Sub (double, double);
++        int Sqrt (double);
+ };
+ 
+ #endif//CALCULATOR_H
+-- 
+2.42.1
+
