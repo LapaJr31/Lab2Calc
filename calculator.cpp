@@ -1,9 +1,9 @@
 #include "calculator.h"
+#include <cmath>
 
-int Calculator::Add (double a, double b)
+int Calculator::Sqrt(double a)
 {
-	return a + b + 0.5;
-
+    return std::sqrt(a);
 }
 
 int Calculator::Sub (double a, double b)
